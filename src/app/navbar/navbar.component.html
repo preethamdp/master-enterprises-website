@@ -1,0 +1,64 @@
+<div class="toolbar" role="banner" >
+    <div class="spacer1"></div>
+    <img
+      width="40"
+      alt="Angular Logo"
+      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+    />
+    <span><h2>Company name</h2></span>
+      <div class="spacer2"></div>
+      <ul class = "navbar">
+        <li class = "nav-link nav-link-ltr">Home</li>
+        <li class = "nav-link nav-link-ltr" 
+        (mouseover) = "openDropdown()"
+        (mouseleave) = "closeDropdown()"
+        >Products</li>
+        <div [class]= "expandClass" (mouseover) = "openDropdown()" (mouseleave) = "closeDropdown()">
+        
+        <ul *ngIf = "expandfirst">
+            <li class = "nav-link-expand nav-link-ltr-expand">Fusing machine belts</li>
+            <li class = "nav-link-expand nav-link-ltr-expand">conveyor belt</li>
+            <li class = "nav-link-expand nav-link-ltr-expand">belt cleaning powder</li>
+            <li class = "nav-link-expand nav-link-ltr-expand">industrial relays</li>
+        </ul>
+        <ul *ngIf = "expandfirst">
+            <li class = "nav-link-expand nav-link-ltr-expand">fusing machine</li>
+            <li class = "nav-link-expand nav-link-ltr-expand">digital thermometer</li>
+            <li class = "nav-link-expand nav-link-ltr-expand">food grade conveyor belts</li>
+            <li class = "nav-link-expand nav-link-ltr-expand">conveyor type fusing machine</li>
+
+        </ul>
+        <ul *ngIf = "expandfirst">
+            <li class = "nav-link-expand nav-link-ltr-expand">industrial belts</li>
+            <li class = "nav-link-expand nav-link-ltr-expand">kevlar belts</li>
+            <li class = "nav-link-expand nav-link-ltr-expand">bond strength digital meter</li>
+            <li class = "nav-link-expand nav-link-ltr-expand">fusing machine silicon rollers</li>
+        </ul>
+    
+    </div>
+  
+        <li class = "nav-link nav-link-ltr" 
+        (mouseover) = "openDropdownprofile()" (mouseleave) = "closeDropdownprofile()"
+        >Profile</li>
+        <div [class]= "expandProfileClass" (mouseover) = "openDropdownprofile()" (mouseleave) = "closeDropdownprofile()">
+            
+            <ul *ngIf = "expand2">
+                <li class = "nav-link-expand nav-link-ltr-expand">Quality</li>
+                <li class = "nav-link-expand nav-link-ltr-expand">Infrausture & facility</li>
+                <li class = "nav-link-expand nav-link-ltr-expand">product portfolio</li>
+                <li class = "nav-link-expand nav-link-ltr-expand">our team</li>
+            </ul>
+            <ul *ngIf = "expand2">
+                <li class = "nav-link-expand nav-link-ltr-expand">corporate video</li>
+                <li class = "nav-link-expand nav-link-ltr-expand">distributor enquiry form</li>
+                <li class = "nav-link-expand nav-link-ltr-expand">download brochure</li>
+                <li class = "nav-link-expand nav-link-ltr-expand">pay option</li>
+    
+            </ul>
+     
+        </div>
+        <li class = "nav-link nav-link-ltr">Contact</li>
+      </ul>
+      
+  </div>
+  
