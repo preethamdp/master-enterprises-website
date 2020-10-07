@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,6 +6,9 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  @Input() 
+  showBg : string;
+  textColor :string;
   expandClass = "product-not-expand";
   expandProfileClass = "product-not-expand";
   expand2 = false;
@@ -13,6 +16,12 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    if(this.showBg == "transparent"){
+      this.textColor = "#fff";
+    }
+    else{
+      this.textColor = '';
+    }
   }
 
 openDropdown(){
@@ -34,6 +43,15 @@ closeDropdownprofile(){
   this.expandProfileClass = "product-not-expand";
   this.expand2= false;
   this.expandfirst= false;
+}
+
+gowhite(){
+  this.showBg = "#fff";
+  this.textColor = "#000";
+}
+gotransparent(){
+  this.showBg = "transparent";
+  this.textColor = "#fff";
 }
 
 }

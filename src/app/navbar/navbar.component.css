@@ -24,14 +24,18 @@
     margin: 0;
   }
 
-  .spacer1 {
+  .spacer1-local {
     flex: 0.2;
   }
-  .spacer2{
+  .spacer2-local{
       flex:0.2
   }
+  a{
+    text-decoration: none;
+    color:inherit;
+  }
 
-  .toolbar {
+  .toolbar-local {
     position: fixed;
     top: 0;
     left: 0;
@@ -43,30 +47,29 @@
     color: #000000;
     font-weight: 600;
     box-shadow: 0px 2px 8px #000000;
+    z-index: 1;
   }
 
-  .toolbar img {
-    margin: 0 16px;
-  }
+  
 
-  .navbar{
+  .navbar-local{
     float:left;
     flex:0.5;
     display: flex;
   }
-  .navbar li{
+  .navbar-local li{
     float: left;
     margin:0 5% 0 5%;
     list-style-type:none;
     cursor: pointer;
   }
 
-  .nav-link {
+  .nav-link-local {
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #031D44;
+    /* color: #031D44; */
     padding: 20px 0px;
     margin: 0px 20px;
     display: inline-block;
@@ -74,11 +77,11 @@
     opacity: 0.75;
   }
   
-  .nav-link:hover {
+  .nav-link-local:hover {
     opacity: 1;
   }
   
-  .nav-link::before {
+  .nav-link-local::before {
     transition: 300ms;
     height: 5px;
     content: "";
@@ -86,12 +89,12 @@
     background-color: #031D44;
   }
   
-  .nav-link-ltr::before {
+  .nav-link-ltr-local::before {
     width: 0%;
     bottom: 10px;
   }
   
-  .nav-link-ltr:hover::before {
+  .nav-link-ltr-local:hover::before {
     width: 100%;
   }
   
@@ -105,7 +108,7 @@
       position: absolute;
       transition: all .5s ease;
       top:60px;
-      color:#fff;
+      /* color:#fff; */
       width:100%;
       justify-content: center;
   }
@@ -141,12 +144,12 @@
 }
 
 
-.nav-link-expand {
+.nav-link-expand-local {
     font-weight: bold;
     font-size: 12px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #031D44;
+    /* color: #031D44; */
     padding: 8px 0px;
     margin: 0px 8px;
     display: inline-block;
@@ -154,11 +157,11 @@
     opacity: 0.75;
   }
   
-  .nav-link-expand:hover {
+  .nav-link-expand-local:hover {
     opacity: 1;
   }
   
-  .nav-link-expand::before {
+  .nav-link-expand-local::before {
     transition: 200ms;
     height: 2px;
     content: "";
@@ -166,11 +169,13 @@
     background-color: #031D44;
   }
   
-  .nav-link-ltr-expand::before {
+  .nav-link-ltr-expand-local::before {
     width: 0%;
     bottom: 5px;
   }
   
-  .nav-link-ltr-expand:hover::before {
+  .nav-link-ltr-expand-local:hover::before {
     width: 100%;
   }
+
+  

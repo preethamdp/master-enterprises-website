@@ -1,0 +1,43 @@
+.second-part{
+    background-color: rgb(255, 255, 255);
+    display: block;
+    padding-bottom: 5rem;
+    z-index: 0;
+    
+    
+}
+.second-part h2{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size:40px;
+    text-decoration: underline;
+    font-weight: 800;
+}
+.list-container{
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.list-item{
+    margin: 0.5rem 1rem 2rem 1rem;
+    
+    padding:2%;
+    
+}
+.list-item img{
+    width: 220px;
+    height: 220px;
+}
+
+.list-item p{
+    text-align: center;
+    font-size: 18px;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    width:80%
+
+}
