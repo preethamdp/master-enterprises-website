@@ -11,6 +11,7 @@ import { ImagesliderComponent } from './imageslider/imageslider.component';
 import { FooterComponent } from './footer/footer.component';
 import { SingleproductComponent } from './singleproduct/singleproduct.component';
 import { ProductsmainComponent } from './productsmain/productsmain.component';
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProductsmainComponent } from './productsmain/productsmain.component';
     FooterComponent,
     SingleproductComponent,
     ProductsmainComponent,
+    ProductdetailsComponent,
   ],
   imports: [
     BrowserModule,
