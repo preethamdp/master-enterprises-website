@@ -8,6 +8,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ImagesliderComponent } from './imageslider/imageslider.component';
+import { FooterComponent } from './footer/footer.component';
+import { SingleproductComponent } from './singleproduct/singleproduct.component';
+import { ProductsmainComponent } from './productsmain/productsmain.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +18,9 @@ import { ImagesliderComponent } from './imageslider/imageslider.component';
     NavbarComponent,
     HomeComponent,
     ImagesliderComponent,
+    FooterComponent,
+    SingleproductComponent,
+    ProductsmainComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
-<div class="toolbar-local" role="banner" [style.background-color] = "showBg"
-            [style.color] = "textColor" (mouseover)="gowhite()" (mouseleave)="gotransparent()">
+<div class="toolbar-local" role="banner" 
+             (mouseover)="gowhite()" (mouseleave)="gotransparent()">
     <div class="spacer1-local"></div>
     <img
       width="40"
@@ -8,13 +8,14 @@
     />
     
     <span><h2>Comany name</h2></span>
+    <span id="gst">GST No. 29ASIPS0674C1ZK</span>
       <div class="spacer2-local"></div>
       <ul class = "navbar-local">
-        <li class = "nav-link-local nav-link-ltr-local" ><a href="" >Home</a></li>
+        <li class = "nav-link-local nav-link-ltr-local" ><a href=""  routerLink = "home">Home</a></li>
         <li class = "nav-link-local nav-link-ltr-local" 
         (mouseover) = "openDropdown()"
-        (mouseleave) = "closeDropdown()"
-        >Products</li>
+        (mouseleave) = "closeDropdown()">
+        <a href="" routerLink = "products">Products</a> </li>
         <div [class]= "expandClass" (mouseover) = "openDropdown()" (mouseleave) = "closeDropdown()">
         
         <ul *ngIf = "expandfirst">

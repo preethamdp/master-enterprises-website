@@ -178,4 +178,11 @@
     width: 100%;
   }
 
+  #gst{
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 8px;
+    margin-top: 8px;
+  }
+
   
