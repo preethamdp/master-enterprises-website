@@ -8,7 +8,9 @@
     
 }
 .product{
-    width:25%
+    width:325px;
+    display:block;
+    margin:auto;
 }
 .product:hover{
     box-shadow: 1px 4px 8px rgba(134, 134, 134, 0.363);

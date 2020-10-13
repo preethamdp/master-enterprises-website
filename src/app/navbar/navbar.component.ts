@@ -13,6 +13,11 @@ export class NavbarComponent implements OnInit {
   expandProfileClass = "product-not-expand";
   expand2 = false;
   expandfirst = false;
+  mobileMenu = "mobile-navbar-not-active";
+  mobileExpand = false;
+  menuIcon = "menuicon-active";
+  crossIcon = "crossicon-notactive";
+  panelOpenState = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -53,5 +58,22 @@ gotransparent(){
   this.showBg = "transparent";
   this.textColor = "#fff";
 }
+
+setMobileMenu(){
+  if(!this.mobileExpand){
+  this.mobileMenu = "mobile-navbar-active"
+  this.mobileExpand = true;
+  this.menuIcon = "menuicon-notactive";
+  this.crossIcon = "crossicon-active";
+  }
+  else{
+    this.mobileMenu = "mobile-navbar-not-active"
+    this.mobileExpand = false;
+    this.menuIcon = "menuicon-active";
+    this.crossIcon = "crossicon-notactive";
+  
+  }
+}
+
 
 }

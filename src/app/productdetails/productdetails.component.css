@@ -1,0 +1,33 @@
+.product-detail-main{
+    margin-top:7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.product-detail-main .left{
+    margin: 0px 3rem 1rem 1rem;
+}
+.product-detail-main .left img{
+    width: 400px;
+    
+}
+
+.product-detail-main .right{
+    width: 600px;
+}
+
+.buy-btn{
+    padding: 1rem 2rem;
+    font-size: 32px;
+    font-weight: 600;
+    background-color: rgb(255, 94, 0);
+    width: fit-content;
+    margin-top: 2rem;
+    color: #fff;
+    box-shadow: 1px 2px 2px #797979;
+    cursor: pointer;
+}
+h1{
+    font-weight: 800;
+}

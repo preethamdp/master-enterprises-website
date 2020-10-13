@@ -62,6 +62,23 @@
         </div>
         <li class = "nav-link-local nav-link-ltr-local">Contact</li>
       </ul>
+  <div class="navbar-menu-btn" (click) = "setMobileMenu()">
+      <img [ngClass]="menuIcon" src="./../../assets/menu.png" alt="">
+      <img [ngClass]="crossIcon" src="./../../assets/cross.png" alt="">
+  </div>
       
+  </div>
+  <div [ngClass]="mobileMenu">
+  <div class="mobilemenu-list">
+      <ul>
+          <li>Home</li>
+          <li>
+            
+            
+          </li>
+          <li>profile</li>
+          <li>contact</li>
+      </ul>
+  </div>
   </div>
   
