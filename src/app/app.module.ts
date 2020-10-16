@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SingleproductComponent } from './singleproduct/singleproduct.component';
 import { ProductsmainComponent } from './productsmain/productsmain.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { ProductfromnavbarviewComponent } from './productfromnavbarview/productfromnavbarview.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +24,15 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     SingleproductComponent,
     ProductsmainComponent,
     ProductdetailsComponent,
+    ProductfromnavbarviewComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {data} from './../whyUsinterface';
+import {DataserviceService} from './../dataservice.service'
 
 @Component({
   selector: 'app-productsmain',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./productsmain.component.css']
 })
 export class ProductsmainComponent implements OnInit {
-
-  constructor() { }
+  alldata:data[]
+  constructor(private dataservice:DataserviceService) { }
 
   ngOnInit(): void {
+    this.alldata = this.dataservice.getAlldata()
+    
   }
 
 }

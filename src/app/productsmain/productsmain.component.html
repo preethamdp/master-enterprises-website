@@ -1,11 +1,26 @@
-
-<div class="products-container">
-    <div class="product"><app-singleproduct></app-singleproduct></div>
-    <div class="product"><app-singleproduct></app-singleproduct></div>
-    <div class="product"><app-singleproduct></app-singleproduct></div>
-    <div class="product"><app-singleproduct></app-singleproduct></div>
-    <div class="product"><app-singleproduct></app-singleproduct></div>
-    <div class="product"><app-singleproduct></app-singleproduct></div>
-    
-    
+<div class="product-container-container">
+<div>
+    <h1>Fusing Machine Belts</h1>
+    <div class="products-container">
+        <div *ngFor="let data of alldata.slice(0,8)" class="product"><app-singleproduct [productdata] = "data"></app-singleproduct></div>
+    </div>
+    </div>
+    <div>
+        <h1>Conveyor Belt</h1>
+        <div class="products-container">
+            <div *ngFor="let data of alldata.slice(8,12)" class="product"><app-singleproduct [productdata] = "data"></app-singleproduct></div>
+        </div>
+        </div>
+        <div>
+            <h1>Belt Cleaning Powder</h1>
+            <div class="products-container">
+                <div *ngFor="let data of alldata.slice(12,15)" class="product"><app-singleproduct [productdata] = "data"></app-singleproduct></div>
+            </div>
+            </div>
+            <div>
+                <h1>Industrial Relays</h1>
+                <div class="products-container">
+                    <div *ngFor="let data of alldata.slice(15,17)" class="product"><app-singleproduct [productdata] = "data"></app-singleproduct></div>
+                </div>
+                </div>
 </div>

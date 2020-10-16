@@ -1,8 +1,14 @@
+.productdetail-container{
+    display: block;
+    margin:auto;
+    width:60%;
+}
 .product-detail-main{
     margin-top:7rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 
 }
 .product-detail-main .left{
@@ -30,4 +36,12 @@
 }
 h1{
     font-weight: 800;
+}
+pre{
+    width:600px;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }

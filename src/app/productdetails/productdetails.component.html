@@ -1,15 +1,19 @@
+<div class="productdetail-container">
 <div class="product-detail-main">
     <div class="left">
-        <img src="./../../assets/logo.jpg" alt="product">
+        <img [src]="productdata.img" alt="product">
         <div class="buy-btn">
             Get Quote
         </div>
     </div>
     <div class="right">
-        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, quae.</h2>
-        <h1>Rs. 12345</h1>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut numquam voluptas est molestias quos illo explicabo officiis! Corrupti amet adipisci harum temporibus sapiente quo placeat quidem nobis, excepturi rerum eos nihil veritatis fugiat odit deleniti illo quos quaerat sed illum incidunt distinctio ut neque obcaecati. Voluptatem quisquam ipsum incidunt neque voluptas maiores maxime nostrum eum a ut nemo temporibus placeat doloribus, labore, animi esse modi optio obcaecati distinctio sed? Aliquam atque ut, cum magni vel esse est cumque voluptatum commodi, optio nobis asperiores similique placeat debitis inventore doloribus, ipsam ipsum natus at vero corrupti. Aliquam dignissimos neque corrupti ratione est.
-        </p>
+        <h2>{{ productdata.name }}</h2>
+        <h1>Rs. {{ productdata.price }}</h1>
+       
+        <pre>
+            {{ productdata.des }}
+        </pre>    
+        
     </div>
+</div>
 </div>

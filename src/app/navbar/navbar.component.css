@@ -201,7 +201,6 @@
   }
   .mobile-navbar-active{
     display: block;
-    height:100vh;
     width: 100%;
     background-color: ivory;
     position: relative;
@@ -232,11 +231,11 @@
 .mobilemenu-list ul{
   display: block;
   text-align: center;
-  padding: 33%;
+  padding: 20%;
 }
 .mobilemenu-list li{
   list-style: none;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
   margin-top: 2rem;
 }

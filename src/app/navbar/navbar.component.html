@@ -71,11 +71,43 @@
   <div [ngClass]="mobileMenu">
   <div class="mobilemenu-list">
       <ul>
-          <li>Home</li>
-          <li>
+          <li routerLink = "home">Home</li>
+          <ngb-accordion [closeOthers]="true" activeIds="">
             
-            
-          </li>
+            <ngb-panel id="static-1" title="Products">
+              <ng-template ngbPanelContent>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local">Fusing machine belts</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">conveyor belt</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">belt cleaning powder</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">industrial relays</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">fusing machine</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">digital thermometer</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">food grade conveyor belts</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">conveyor type fusing machine</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">industrial belts</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">kevlar belts</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">bond strength digital meter</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">fusing machine silicon rollers</li>
+              </ng-template>
+            </ngb-panel>
+          </ngb-accordion>
+          <!-- <div class="mobile-product-expand">
+              
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">Fusing machine belts</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">conveyor belt</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">belt cleaning powder</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">industrial relays</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">fusing machine</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">digital thermometer</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">food grade conveyor belts</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">conveyor type fusing machine</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">industrial belts</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">kevlar belts</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">bond strength digital meter</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local">fusing machine silicon rollers</li>
+        </div> -->
+        
+        
           <li>profile</li>
           <li>contact</li>
       </ul>

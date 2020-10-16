@@ -1,11 +1,11 @@
-<div class="product" routerLink = "/productdetail/data">
+<div class="product" routerLink = "/productdetail/{{productdata.name}}">
     <div class="left-image">
-        <img src="./../../assets/logo.jpg" alt="product image goes here">
+        <img [src]="productdata.img" alt="product image goes here">
     </div>
     <div class="right-text-part">
         <div class="product-name">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia totam inventore laboriosam quis, vero ut perferendis nesciunt dolor. Ut, placeat.
+        {{ productdata.name }}    
         </div>
-        <h2 id="price">Rs. 1234</h2>
+        <h2 id="price">Rs. {{ productdata.price }} <span style = "font-size:12px;font-weight: 100;">/{{productdata.unit}}</span></h2>
     </div>
 </div>
