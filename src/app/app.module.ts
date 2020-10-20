@@ -13,6 +13,8 @@ import { SingleproductComponent } from './singleproduct/singleproduct.component'
 import { ProductsmainComponent } from './productsmain/productsmain.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { ProductfromnavbarviewComponent } from './productfromnavbarview/productfromnavbarview.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { ProductfromnavbarviewComponent } from './productfromnavbarview/productf
     ProductsmainComponent,
     ProductdetailsComponent,
     ProductfromnavbarviewComponent,
+    ProfileComponent,
     
   ],
   imports: [
@@ -32,6 +35,7 @@ import { ProductfromnavbarviewComponent } from './productfromnavbarview/productf
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
+    MatExpansionModule
 
   ],
   providers: [],

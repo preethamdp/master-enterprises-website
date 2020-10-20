@@ -1,0 +1,11 @@
+.mat-form-field + .mat-form-field {
+    
+  }
+
+.profile{
+    width:50%;
+    display: block;
+    margin: auto;  
+    margin-top: 7rem;
+    height: 100vh;
+}

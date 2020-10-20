@@ -10,18 +10,32 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductfromnavbarviewComponent implements OnInit {
   alldata:data[]
-  reqdata:data[]
+  reqdata:data[] = []
   param1:string;
-  constructor(private _Activatedroute:ActivatedRoute,private dataservice:DataserviceService) { }
+  constructor(private _Activatedroute:ActivatedRoute,private dataservice:DataserviceService) {
+    this._Activatedroute.paramMap.subscribe(params => {
+      this.ngOnInit();
+     });
+   }
 
   ngOnInit(): void {
+    
+  this.getData()
+  }
+  getData(){
     this.alldata = this.dataservice.getAlldata()
     this._Activatedroute.paramMap.subscribe(params => { 
       this.param1 = params.get('data'); 
+      console.log(this.param1)
   });
-  console.log(this.param1)
-   //code goes here
-
+   this.reqdata = []
+    for(let each of this.alldata){
+      console.log(each.id)
+      if (":"+each.id == this.param1){
+        console.log("herer")
+        this.reqdata.push(each)
+      }
+    }
   }
   }
 

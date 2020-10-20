@@ -10,37 +10,41 @@
     <span><h2>Comany name</h2></span>
     <span id="gst">GST No. 29ASIPS0674C1ZK</span>
       <div class="spacer2-local"></div>
-      <ul class = "navbar-local">
-        <li class = "nav-link-local nav-link-ltr-local" ><a href=""  routerLink = "home">Home</a></li>
+      <ul class = "navbar-local" >
+        <li class = "nav-link-local nav-link-ltr-local" ><a href=""  routerLink = "home"(click) = "closeDropdown()">Home</a></li>
         <li class = "nav-link-local nav-link-ltr-local" 
         (mouseover) = "openDropdown()"
         (mouseleave) = "closeDropdown()">
-        <a href="" routerLink = "products">Products</a> </li>
-        <div [class]= "expandClass" (mouseover) = "openDropdown()" (mouseleave) = "closeDropdown()">
+        <a href="" routerLink = "products" (click) = "closeDropdown()">Products</a> </li>
+        <div [class]= "expandClass" (mouseover) = "openDropdown()" (mouseleave) = "closeDropdown()" >
         
         <ul *ngIf = "expandfirst">
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">Fusing machine belts</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">conveyor belt</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">belt cleaning powder</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">industrial relays</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local"  routerLink = "./productlist/:fb">Fusing machine belts</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:cb">conveyor belt</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local"  routerLink = "productlist/:bcp">belt cleaning powder</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:ir">industrial relays</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:gm">Gear Motor</li>
         </ul>
         <ul *ngIf = "expandfirst">
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">fusing machine</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">digital thermometer</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">food grade conveyor belts</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">conveyor type fusing machine</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:fm">fusing machine</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:dt">digital thermometer</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:fgc">food grade conveyor belts</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:cfm">conveyor type fusing machine</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:utc">UV Test Chamber</li>
 
         </ul>
         <ul *ngIf = "expandfirst">
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">industrial belts</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">kevlar belts</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">bond strength digital meter</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">fusing machine silicon rollers</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:ib">industrial belts</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:kb">kevlar belts</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:bs">bond strength digital meter</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:fmsr">fusing machine silicon rollers</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:em">Energy Meters</li>
+            <li class = "nav-link-expand-local nav-link-ltr-expand-local" routerLink = "productlist/:tc">Thermo Couple</li>
         </ul>
     
     </div>
-  
-        <li class = "nav-link-local nav-link-ltr-local" 
+    <li class = "nav-link-local nav-link-ltr-local" routerLink = "profile">Profile</li>
+        <!-- <li class = "nav-link-local nav-link-ltr-local" 
         (mouseover) = "openDropdownprofile()" (mouseleave) = "closeDropdownprofile()"
         >Profile</li>
         <div [class]= "expandProfileClass" (mouseover) = "openDropdownprofile()" (mouseleave) = "closeDropdownprofile()">
@@ -59,7 +63,7 @@
     
             </ul>
      
-        </div>
+        </div> -->
         <li class = "nav-link-local nav-link-ltr-local">Contact</li>
       </ul>
   <div class="navbar-menu-btn" (click) = "setMobileMenu()">
@@ -69,28 +73,34 @@
       
   </div>
   <div [ngClass]="mobileMenu">
-  <div class="mobilemenu-list">
+  <div class="mobilemenu-list" >
       <ul>
-          <li routerLink = "home">Home</li>
+          <li routerLink = "home" (click) = "setMobileMenu()">Home</li>
+          <span style = "position:relative;top: 1rem;">
           <ngb-accordion [closeOthers]="true" activeIds="">
             
             <ngb-panel id="static-1" title="Products">
               <ng-template ngbPanelContent>
-                <li class = "nav-link-expand-local nav-link-ltr-expand-local">Fusing machine belts</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">conveyor belt</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">belt cleaning powder</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">industrial relays</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">fusing machine</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">digital thermometer</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">food grade conveyor belts</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">conveyor type fusing machine</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">industrial belts</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">kevlar belts</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">bond strength digital meter</li>
-            <li class = "nav-link-expand-local nav-link-ltr-expand-local">fusing machine silicon rollers</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "./productlist/:fb">Fusing machine belts</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:cb">conveyor belt</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()"  routerLink = "productlist/:bcp">belt cleaning powder</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:ir">industrial relays</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:gm">Gear Motor</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:fm">fusing machine</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:dt">digital thermometer</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:fgc">food grade conveyor belts</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:cfm">conveyor type fusing machine</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:utc">UV Test Chamber</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:ib">industrial belts</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:kb">kevlar belts</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:bs">bond strength digital meter</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:fmsr">fusing machine silicon rollers</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:em">Energy Meters</li>
+                <li class = "nav-link-expand-local nav-link-ltr-expand-local" (click) = "setMobileMenu()" routerLink = "productlist/:tc">Thermo Couple</li>
               </ng-template>
             </ngb-panel>
           </ngb-accordion>
+        </span>
           <!-- <div class="mobile-product-expand">
               
             <li class = "nav-link-expand-local nav-link-ltr-expand-local">Fusing machine belts</li>
@@ -108,8 +118,8 @@
         </div> -->
         
         
-          <li>profile</li>
-          <li>contact</li>
+          <li (click) = "setMobileMenu()">profile</li>
+          <li (click) = "setMobileMenu()">contact</li>
       </ul>
   </div>
   </div>

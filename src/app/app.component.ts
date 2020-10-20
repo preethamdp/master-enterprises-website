@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'master-enterprise';
   showNav = "transparent";
+  onActivate(e, outlet){
+    window.scroll(0,0);
+  }
 }

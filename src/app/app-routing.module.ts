@@ -4,13 +4,15 @@ import { HomeComponent } from './home/home.component';
 import { ProductsmainComponent } from './productsmain/productsmain.component'
 import { ProductdetailsComponent } from './productdetails/productdetails.component'
 import { ProductfromnavbarviewComponent } from './productfromnavbarview/productfromnavbarview.component'
+import { ProfileComponent } from './profile/profile.component'
 
 
 const routes: Routes = [
   {path: 'home',component:HomeComponent},
   {path: 'products',component:ProductsmainComponent},
   {path: 'productdetail/:data',component:ProductdetailsComponent},
-  {path: 'productlist/:data',component:ProductfromnavbarviewComponent}
+  {path: 'productlist/:data',component:ProductfromnavbarviewComponent},
+  {path: 'profile',component:ProfileComponent}
 
 ];
 

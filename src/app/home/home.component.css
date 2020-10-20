@@ -6,12 +6,29 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+  #main-img{
+      min-height: 70vh;
+     
+  }
+  .big-text{
+   
+    font-size:80px;
+    color:rgb(239, 225, 255);
+    font-weight: 900;
+    z-index: 0;
+    background-image: url(./../../assets/homebg.jpg);
+    height: 100vh;
+    padding: 20% 5rem;
+    
+  }
+  #main-header{
+    font-size:150px;
+    padding-bottom: 2rem;
+  }
 .second-part{
     background-color: rgb(255, 255, 255);
     display: block;
     padding-bottom: 5rem;
-    z-index: 0;
     
     
 }
@@ -51,3 +68,18 @@
     text-transform: uppercase;
 
 }
+
+@media only screen and (max-width:1000px){
+    .big-text{
+        font-size: 40px;
+        padding: 40% 2rem;
+        
+    }
+    .big-text span{
+        padding-bottom: 2rem;
+    }
+    #main-header {
+        font-size: 50px;
+        line-height: 4rem;
+    }
+  }

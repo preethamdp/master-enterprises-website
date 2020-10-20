@@ -23,4 +23,10 @@
                     <div *ngFor="let data of alldata.slice(15,17)" class="product"><app-singleproduct [productdata] = "data"></app-singleproduct></div>
                 </div>
                 </div>
+        <div>
+        <h1>OTHER PRODUCTS</h1>
+        <div class="products-container">
+            <div *ngFor="let data of alldata.slice(17,30)" class="product"><app-singleproduct [productdata] = "data"></app-singleproduct></div>
+        </div>
+        </div>
 </div>

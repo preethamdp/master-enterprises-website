@@ -14,13 +14,13 @@ export class ProductdetailsComponent implements OnInit {
   constructor(private dataservice:DataserviceService,private _Activatedroute:ActivatedRoute) { }
 
   ngOnInit() {
+    
     this._Activatedroute.paramMap.subscribe(params => { 
       this.param1 = params.get('data'); 
       console.log(this.param1)
   });
-  console.log(this.param1)
     this.productdata = this.dataservice.getSpecificdata(this.param1);
-    console.log(this.param1)
+ 
 
   }
 
