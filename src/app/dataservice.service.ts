@@ -4,7 +4,8 @@ import { data } from './whyUsinterface';
 
 
 const maindata:data[] = [
-  {id:'fb',unit : 'unit',img : './../assets/fusingbelts01.jpg',name:'Fusing Machine Seamless Belts',price:'2,500',des:`Product Details:
+  {id:'fb',unit : 'unit',img : './../assets/fusingbelts01.jpg',name:'Fusing Machine Seamless Belts',price:'2,500',des:`
+  Product Details:
   Usage	Industrial
   Material	PTFE
   Color	Black,Brown
@@ -32,7 +33,8 @@ const maindata:data[] = [
   Additional Information:
   
   Item Code: ME03`},
-  {id:'fb',unit : 'unit',img : './../assets/fusingbelts02.jpg',name:'Teflon Belt',price:'70',des:`Product Details:
+  {id:'fb',unit : 'unit',img : './../assets/fusingbelts02.jpg',name:'Teflon Belt',price:'70',des:`
+  Product Details:
   Minimum Order Quantity	01 Piece
   Packaging Type	good Quality of packaging
   Belt Width	10mm, 12mm.15mm
@@ -53,7 +55,8 @@ const maindata:data[] = [
   Production Capacity: Strong
   Delivery Time: Immediately after confirmation
   Packaging Details: Good Packing & Courier Service also there.`},
-  {id:'fb',unit : 'unit',img : './../assets/fusingbelts03.jpg',name:'Fusing Machine Conveyor Belts',price:'2,000',des:`Product Details:
+  {id:'fb',unit : 'unit',img : './../assets/fusingbelts03.jpg',name:'Fusing Machine Conveyor Belts',price:'2,000',des:`
+  Product Details:
   Minimum Order Quantity	1 Unit
   Packaging Type	Box
   Belt Width	450MM,500MM,600MM,700MM,800MM,900MM,1000MM
@@ -69,7 +72,8 @@ const maindata:data[] = [
   Production Capacity: 250 c
   Delivery Time: immediately after confirmation order
   Packaging Details: We are done good packing for belts`},
-  {id:'fb',unit : 'unit',img : './../assets/fusingbelts04.jpg',name:'Fusing Machine Needle Detector Belts',price:'2,500',des:`Product Details:
+  {id:'fb',unit : 'unit',img : './../assets/fusingbelts04.jpg',name:'Fusing Machine Needle Detector Belts',price:'2,500',des:`
+  Product Details:
   Usage	Industrial
   Brand	HASHIMA
   Model	HASHIMA HN740G
@@ -90,7 +94,8 @@ const maindata:data[] = [
   Port of Dispatch: BANGALORE
   Delivery Time: 1DAY
   Packaging Details: GOOD PACKING WITH NEATNESS`},
-  {id:'fb',unit : 'unit',img : './../assets/fusingbelts05.jpg',name:'Fusing Machine Rivet Belts',price:'1,200',des:`Product Details:
+  {id:'fb',unit : 'unit',img : './../assets/fusingbelts05.jpg',name:'Fusing Machine Rivet Belts',price:'1,200',des:`
+  Product Details:
   Minimum Order Quantity	1 Piece
   Packaging Type	Box
   Brand	Master
@@ -104,7 +109,8 @@ const maindata:data[] = [
   Features:
   Beautifully designed
   Made in India`},
-  {id:'fb',unit : 'unit',img : './../assets/fusingbelts06.jpg',name:'Fusing Machine Profile Belts',price:' 2,500',des:`Product Details:
+  {id:'fb',unit : 'unit',img : './../assets/fusingbelts06.jpg',name:'Fusing Machine Profile Belts',price:' 2,500',des:`
+  Product Details:
   Color	Green
   Usage/Application	Industrial
   Packaging Type	Roll
@@ -123,7 +129,8 @@ const maindata:data[] = [
   Precise designs
   
   Fine finish`},
-  {id:'fb',unit : 'unit',img : './../assets/fusingbelts07.jpg',name:'Seamless Fabric Conveyor Belts',price:' 1,500',des:`Product Details:
+  {id:'fb',unit : 'unit',img : './../assets/fusingbelts07.jpg',name:'Seamless Fabric Conveyor Belts',price:' 1,500',des:`
+  Product Details:
   Brand	Master
   Material	Nylon
   Width	30 - 84 Inch
@@ -178,7 +185,7 @@ const maindata:data[] = [
   Packaging Details: GOOD QUALITY OF PRODUCT`},
   {id:'cb',unit : 'unit',img : './../assets/convbelt02.jpg',name:'PVC Conveyor Belt',
   price:'700',des:`
-  Product Details:
+Product Details:
 Minimum Order Quantity	1 Unit
 Country of Origin	Made in India
 Material	PVC

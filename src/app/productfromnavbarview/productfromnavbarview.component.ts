@@ -15,6 +15,7 @@ export class ProductfromnavbarviewComponent implements OnInit {
   constructor(private _Activatedroute:ActivatedRoute,private dataservice:DataserviceService) {
     this._Activatedroute.paramMap.subscribe(params => {
       this.ngOnInit();
+      window.scroll(0,0);
      });
    }
 
