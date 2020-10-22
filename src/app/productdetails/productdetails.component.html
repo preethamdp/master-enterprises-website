@@ -2,13 +2,13 @@
 <div class="product-detail-main">
     <div class="left">
         <img [src]="productdata.img" alt="product">
-        <div class="buy-btn">
-            Get Quote
+        <div class="buy-btn" >
+            <a href="" style="text-decoration: none;color:white" routerLink = "./../../contact">Get Quote</a>   
         </div>
     </div>
     <div class="right">
         <h2>{{ productdata.name }}</h2>
-        <h1>Rs. {{ productdata.price }}</h1>
+        <h1><span style = "font-size:12px;font-weight: 100;">(Approx. )</span>Rs. {{ productdata.price }}  <span style = "font-size:12px;font-weight: 100;"> / {{productdata.unit}}</span></h1>
        
         <pre>
             {{ productdata.des }}

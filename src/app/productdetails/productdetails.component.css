@@ -45,3 +45,40 @@ pre{
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
+
+@media only screen and (max-width:1200px){
+    .productdetail-container{
+        display: block;
+    margin:auto;
+    width:100%;
+    }
+    .product-detail-main{
+        margin-top:2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    
+    }
+    .product-detail-main .left img{
+        width: 300px;
+    }
+    .product-detail-main .left{
+        margin: 0px 3rem 1rem 1rem;
+    }
+   
+    
+    .product-detail-main .right{
+        width: 400px;
+        margin: 0px 3rem 1rem 1rem;
+    }
+    pre{
+        width:350px;
+        white-space: pre-wrap;       /* Since CSS 2.1 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    }
+  }

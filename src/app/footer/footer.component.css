@@ -20,3 +20,6 @@ a:hover{
     bottom: 0;
     
 }
+li{
+    cursor: pointer;
+}

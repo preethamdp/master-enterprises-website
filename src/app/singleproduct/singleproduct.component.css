@@ -10,7 +10,7 @@
 
 .product{
     display:block;
-    background-color:ivory;
+    background-color:rgb(255, 255, 255);
     padding:1rem;
     margin:4px
 }
@@ -33,3 +33,4 @@
     font-size: 28px;
     margin:2rem 0px 1rem 0px;
 }
+

@@ -15,6 +15,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 import { ProductfromnavbarviewComponent } from './productfromnavbarview/productfromnavbarview.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { ProfileComponent } from './profile/profile.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ProfileComponent } from './profile/profile.component';
     ProductdetailsComponent,
     ProductfromnavbarviewComponent,
     ProfileComponent,
+    ContactComponent,
     
   ],
   imports: [

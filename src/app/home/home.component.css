@@ -37,7 +37,6 @@
     padding-top: 3rem;
     padding-bottom: 2rem;
     font-size:40px;
-    text-decoration: underline;
     font-weight: 800;
 }
 .list-container{
@@ -69,7 +68,40 @@
 
 }
 
-@media only screen and (max-width:1000px){
+
+  @media only screen and (max-width:1800px){
+    .big-text{
+        font-size: 110px;
+        
+    }
+ 
+    #main-header {
+        font-size:120px;
+    }
+  }
+  @media only screen and (max-width:1500px){
+    .big-text{
+        font-size: 90px;
+        
+    }
+ 
+    #main-header {
+        font-size:100px;
+    }
+  }
+  @media only screen and (max-width:1400px){
+    .big-text{
+        font-size: 70px;
+        
+    }
+    .big-text span{
+        padding-bottom: 2rem;
+    }
+    #main-header {
+        font-size: 80px;
+    }
+  }
+  @media only screen and (max-width:1100px){
     .big-text{
         font-size: 40px;
         padding: 40% 2rem;

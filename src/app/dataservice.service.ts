@@ -627,7 +627,7 @@ Production Capacity: 250 degree
 Delivery Time: 5 DAYS
 Packaging Details: GOOD PACKING
 `},
-{id:'ib',unit : 'Piece',img : './../assets/cfm01.jpg',name:'Industrial Belts - Food Grade 2Ply Belts',
+{id:'ib',unit : 'Piece',img : './../assets/ib01.jfif',name:'Industrial Belts - Food Grade 2Ply Belts',
 price:'2,000 ',des:`
 Product Details:
 Minimum Order Quantity	1 Piece
